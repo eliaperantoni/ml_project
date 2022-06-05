@@ -1,0 +1,41 @@
+\documentclass[14pt]{extarticle}
+\usepackage[T1]{fontenc}
+
+\usepackage[english]{babel}
+
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage[parfill]{parskip}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true, urlcolor=blue}
+\urlstyle{same}
+
+\begin{document}
+    \author{Elia Perantoni}
+    \title{ Machine Learning Project \\
+        \large Classifying human activities \\
+        (Project \#3) }
+    \maketitle
+
+    \section{Introduction}
+    We want to build a machine learning classifier on the \emph{Human Activity
+    Recognition with Smartphones} dataset, available at the following
+    \href{https://www.kaggle.com/datasets/uciml/human-activity-recognition-with-smartphones}{link}.
+
+    The data has been gathered by having $30$ subjects performing $6$ different
+    physical activities (laying, standing, sitting, walking, walking upstairs
+    and walking downstairs) while a waist-mounted smartphone records
+    accelerometer and gyroscope state.
+
+    Each sample originally consisted of $3$-axis linear acceleration and
+    $3$-axis angular velocity but has been feature-engineered, by the authors,
+    to a grand total of $561$ features, obtained by filtering, mixing and
+    matching the primitive ones.
+
+    \section{PCA}
+    We start by performing \emph{Principal Component Analysis} on 
+\end{document}
