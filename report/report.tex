@@ -55,7 +55,8 @@
     \begin{minted}{python}
 # train_y is ["WALKING", "STANDING", "WALKING", ... ]
 cm = ClassMapper(train_y)
-train_y = cm.transform(train_y) # train_y is [0, 1, 0, ... ]
+train_y = cm.transform(train_y)
+# train_y is [0, 1, 0, ... ]
     \end{minted}
 
     \section{PCA}
@@ -112,11 +113,11 @@ train_X = lda_reduce(train_X)
 
     I chose to go down the naive Bayesian route. There are $k=6$ multivariate
     Gaussian distributions, one for each class, that attempt to enclose the
-    region of $\mathbb{R}^5$ in which the samples of that class occur. The
+    regions of $\mathbb{R}^5$ in which the samples of each class occur. The
     Gaussian distributions are trained simply by partitioning the training
     samples by class and, for each partition, computing the mean $\boldsymbol{\mu}$ and
     covariance matrix $\boldsymbol{\Sigma}$. Although the classes are quite
-    evenly distributed, the prior probability $p(\omega_i)=\frac{|X\cap\omega_i|}{|X|}$
+    evenly distributed, the prior probability $p(\omega_i)=\frac{|X\ \cap\ \omega_i|}{|X|}$
     is also computed.
 
     To make a new prediction on an unseen sample $\boldsymbol{x}$, simply take
@@ -133,7 +134,7 @@ train_X = lda_reduce(train_X)
 
     \section{Results}
     Our simple classifier achieves an accuracy of $0.9613$. Compare this with
-    other, more sophisticated classifiers (from the \emph{SciKit-Learn}
+    other, more sophisticated, classifiers (from the \emph{SciKit-Learn}
     library).
 
     \begin{center}
