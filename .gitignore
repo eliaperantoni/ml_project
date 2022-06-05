@@ -1,4 +1,8 @@
 .idea/
 *.csv
-report/**/*
-!report/report.tex
+*.code-workspace
+
+report/out/*
+!report/out/report.pdf
+
+report/_minted-report/
